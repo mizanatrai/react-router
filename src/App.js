@@ -1,15 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
 import Home from './Home/Home';
 import Friends from './Friends/Friends';
 import About from './About/About';
+import { Route, Routes } from 'react-router-dom';
+import NotFound from './NotFound/NotFound';
 
 function App() {
   return (
     <div className="App">
-      <Home></Home>
-      <Friends></Friends>
-      <About></About>
+      <h1>Welcome to my fancy routing website!</h1>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='about' element={<About />} />
+        <Route path='friends' element={<Friends />} />
+        <Route path='*' element={<NotFound />} />
+      </Routes>
     </div>
   );
 }
