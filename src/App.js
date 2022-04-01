@@ -4,6 +4,7 @@ import Friends from './Friends/Friends';
 import About from './About/About';
 import { Route, Routes } from 'react-router-dom';
 import NotFound from './NotFound/NotFound';
+import Friend from './Friend/Friend';
 
 function App() {
   return (
