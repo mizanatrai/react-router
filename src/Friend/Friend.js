@@ -6,11 +6,11 @@ const Friend = (props) => {
     const {name, username, email, id} = props.friend;
 
 
-    let navigate = useNavigate;
+    let navigate = useNavigate();
 
     const showFriendDetail = () => {
         const path = `/friend/${id}`
-        navigate(path)
+        navigate(path);
     }
 
     return (
